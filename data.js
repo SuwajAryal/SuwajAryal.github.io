@@ -42,11 +42,9 @@ const DATA = {
 
 I completed my Bachelor's degree at the Institute of Engineering, Pulchowk Campus, and am currently pursuing my Master's degree in Hydropower Engineering at the same institution. My academic journey has been defined by a commitment to rigorous analysis, supported by national-level merit scholarships for both my undergraduate and graduate studies.
 
-For my Master's thesis, I am investigating hybrid modeling approaches for predicting suspended sediment load in flashy river catchments, specifically focusing on the West Rapti River. By exploring how physical constraints from sediment transport equations can guide neural networks, I am working toward a framework that remains physically consistent even when field data is limited. This research represents my broader interest in making machine learning a more reliable tool for hydraulic engineering.
-
 While my primary focus is research, my background includes significant practical design experience. I have worked on projects ranging from full irrigation system design to 1D and 2D hydraulic modeling for urban planning. This balance between theoretical research and design engineering ensures that my computational work remains grounded in real-world feasibility.
 
-Beyond my academic pursuits, I am a regular at weekly futsal and enjoy casual cricket and football. I find that engaging in diverse interests, from music and gaming to reading manga, helps maintain the persistence and creative outlook required for long-term research projects. I am currently seeking opportunities to further my research at the doctoral level, specifically in areas where computational fluid dynamics and scientific computing can solve pressing water resource challenges.`,
+Beyond my academic pursuits, I love to watch and play football. I find that engaging in diverse interests, from music and gaming to reading manga, helps maintain the persistence and creative outlook required for long-term research projects. I am currently seeking opportunities to further my research at the doctoral level, specifically in areas where computational fluid dynamics and scientific computing can solve pressing water resource challenges.`,
 
   aboutHighlights: [
     { icon: "🌊", label: "Water Resources & Hydraulics" },
