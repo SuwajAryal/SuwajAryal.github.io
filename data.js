@@ -36,7 +36,8 @@ const DATA = {
   // ──────────────────────────────────────────────────
   //  ABOUT ME
   // ──────────────────────────────────────────────────
-  aboutIntro: "Civil Engineer and Hydroinformatics Researcher specializing in Water Resources. Integrating physical principles with AI to model complex sediment dynamics",
+  aboutIntro: "Civil Engineer and Hydroinformatics Researcher specializing in Water Resources. Integrating physical principles with AI to model complex sediment dynamics.",
+  
   aboutStory: `My academic interests lie at the intersection of classical hydraulics and modern computational methods. I am particularly driven by the challenge of modeling river systems in data-scarce environments, where traditional empirical formulas often struggle to capture complex sediment dynamics. My goal is to develop more robust predictive tools by informing data-driven models with established physical principles.
 
 I completed my Bachelor's degree at the Institute of Engineering, Pulchowk Campus, and am currently pursuing my Master's degree in Hydropower Engineering at the same institution. My academic journey has been defined by a commitment to rigorous analysis, supported by national-level merit scholarships for both my undergraduate and graduate studies.
@@ -46,7 +47,8 @@ For my Master's thesis, I am investigating hybrid modeling approaches for predic
 While my primary focus is research, my background includes significant practical design experience. I have worked on projects ranging from full irrigation system design to 1D and 2D hydraulic modeling for urban planning. This balance between theoretical research and design engineering ensures that my computational work remains grounded in real-world feasibility.
 
 Beyond my academic pursuits, I am a regular at weekly futsal and enjoy casual cricket and football. I find that engaging in diverse interests, from music and gaming to reading manga, helps maintain the persistence and creative outlook required for long-term research projects. I am currently seeking opportunities to further my research at the doctoral level, specifically in areas where computational fluid dynamics and scientific computing can solve pressing water resource challenges.`,
- 
+
+  aboutHighlights: [
     { icon: "🌊", label: "Water Resources & Hydraulics" },
     { icon: "⚡", label: "Hydropower Design" },
     { icon: "🌍", label: "River & Sediment Systems" },
@@ -123,8 +125,8 @@ Beyond my academic pursuits, I am a regular at weekly futsal and enjoy casual cr
   research: [
     {
       title: "Suspended Sediment Load Prediction in Flashy Catchments",
-      type: "Conference Paper
-      description: "Preparing a submission for the CEISD-2026 detailing the importance of ML in sediment prediction in Himalyan catchment.",
+      type: "Conference Paper",
+      description: "Preparing a submission for the CEISD-2026 detailing the importance of ML in sediment prediction in Himalayan catchments.",
     },
     {
       title: "Hydrological Impact of Land-Use Change in Kathmandu Watershed",
@@ -153,9 +155,9 @@ Beyond my academic pursuits, I am a regular at weekly futsal and enjoy casual cr
   // ──────────────────────────────────────────────────
   researchInterests: [
     "Computational Hydraulics & River Modelling",
-    "Machine Learning in hydrology and Hydraulics",
+    "Machine Learning in Hydrology and Hydraulics",
     "Sediment Transport & Reservoir Sustainability",
-    "Hydroinformatic automatation System",
+    "Hydroinformatic Automation Systems",
     "Hydropower System Design & Optimization",
     "Flood & Watershed Modelling",
   ],
@@ -165,8 +167,8 @@ Beyond my academic pursuits, I am a regular at weekly futsal and enjoy casual cr
   // ──────────────────────────────────────────────────
   skills: [
     { category: "Hydrological Tools", items: ["HEC-HMS", "HEC-RAS", "HEC-ResSim", "SWAT", "EPA SWMM"] },
-    { category: "Programming & Web",  items: ["Python", "JavaScript", "HTML", "VBA", "C", "FORTRAN", "CSS"] },
-    { category: "Engineering Tools",  items: ["GIS","AutoCAD", "Civil 3D"] },
+    { category: "Programming & Web",  items: ["Python", "JavaScript", "HTML", "CSS", "VBA", "C", "FORTRAN"] },
+    { category: "Engineering Tools",  items: ["GIS", "AutoCAD", "Civil 3D"] },
     { category: "CFD & Modelling",    items: ["OpenFOAM", "RESCON 2"] },
     { category: "Academic Tools",     items: ["Excel", "Zotero", "LaTeX", "Word", "PowerPoint"] },
   ],
