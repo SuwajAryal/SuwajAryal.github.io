@@ -47,6 +47,10 @@ a:hover { color: var(--accent2); }
    Real photographs: Himalayas → Hills → Terai
    Smooth scroll-based opacity transitions
    ========================================== */
+/* ==========================================
+   HYDROLOGICAL WATERSHED BACKGROUNDS
+   Scroll flow maps to river flow: Catchment → Gorge → Plains
+   ========================================== */
 .nepal-photo-bg {
   position: fixed; inset: 0; z-index: -2;
   pointer-events: none;
@@ -60,29 +64,28 @@ a:hover { color: var(--accent2); }
   transition: opacity .1s ease;
 }
 
-/* Himalaya — snowy peaks (visible at top) */
+/* 1. The Source: High-altitude catchment & snowmelt */
 .photo-himalaya {
-  background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920');
+  background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1920');
   opacity: var(--himalaya-opacity, 1);
-  background-position: center 20%; /* Shifts focus slightly to the peaks */
 }
 
-/* Hills — green rolling hills (visible in middle) */
+/* 2. The Midstream: Steep gradient river gorge (Hydropower zone) */
 .photo-hills {
-  background-image: url('https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?q=80&w=1920');
   opacity: var(--hills-opacity, 0);
 }
 
-/* Terai — flat green plains (visible at bottom) */
+/* 3. The Downstream: Wide, low-gradient river plains (Sediment deposition zone) */
 .photo-terai {
-  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1505322022379-7c3353ee6291?q=80&w=1920');
   opacity: var(--terai-opacity, 0);
 }
 
-/* Dark overlay so text stays readable */
+/* Dark overlay ensuring your technical text remains highly readable */
 .photo-overlay {
   position: absolute; inset: 0;
-  background: rgba(11, 17, 32, .72);
+  background: rgba(11, 17, 32, .78); /* Slightly darkened to contrast the bright water */
 }
 
 /* ---------- Floating Particles (subtle) ---------- */
