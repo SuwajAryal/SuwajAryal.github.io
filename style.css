@@ -62,8 +62,9 @@ a:hover { color: var(--accent2); }
 
 /* Himalaya — snowy peaks (visible at top) */
 .photo-himalaya {
-  background-image: url('https://images.unsplash.com/photo-1516477266410-9e30382577ee?w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1920');
   opacity: var(--himalaya-opacity, 1);
+  background-position: center 20%; /* Shifts focus slightly to the peaks */
 }
 
 /* Hills — green rolling hills (visible in middle) */
