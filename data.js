@@ -240,26 +240,30 @@ Outside of work, I'm into football, cricket, and weekly futsal. I play Valorant 
   //               "gaming", "guitar", "manga", "hiking"
   //  (or use any word — it will show a ✨ if not recognized)
   // ──────────────────────────────────────────────────
+ 
+// ──────────────────────────────────────────────────
+  //  BEYOND ENGINEERING
+  // ──────────────────────────────────────────────────
   beyondEngineering: [
     {
       icon: "football",
-      title: "Football",
-      description: "My first love in sports. Won gold at +2 level and the 1st Year Cup at Pulchowk. These days it's weekly futsal — still competitive, still love it.",
+      title: "Football & Futsal",
+      description: "My first love in sports. These days it's all about weekly futsal with friends—playing for the exercise, the love of the game, and the post-match tea.",
     },
     {
       icon: "cricket",
       title: "Cricket",
-      description: "Gold medalist. My friends carried the team, but I clutched when it mattered most in the semifinal.",
+      description: "Always down for a casual weekend match. I play mostly for the fun, the banter, and those rare moments when I actually manage to hit a solid boundary.",
     },
     {
       icon: "tabletennis",
       title: "Table Tennis",
-      description: "My casual go-to game. Don't challenge me unless you mean it.",
+      description: "My go-to game for a quick indoor break. I'm no pro, but I love a good, casual rally with friends to get the energy up.",
     },
     {
       icon: "gaming",
       title: "Gaming",
-      description: "Valorant with the boys, casual ranked grinds. Even played in the college tournament — it's a good way to unwind and stay sharp.",
+      description: "Valorant with the boys and casual ranked grinds. It's my preferred way to unwind, hang out digitally, and switch off from engineering for a bit.",
     },
     {
       icon: "guitar",
@@ -274,11 +278,9 @@ Outside of work, I'm into football, cricket, and weekly futsal. I play Valorant 
     {
       icon: "hiking",
       title: "Hiking",
-      description: "During 2nd semester, our group hiked every Saturday. Want to get back to it — Nepal has no shortage of trails.",
+      description: "Nepal has no shortage of trails. I love getting out into the hills when I can to clear my head and appreciate the landscape we live in.",
     },
   ],
-
-
   // ──────────────────────────────────────────────────
   //  WHERE I'M HEADED — your future goals text
   // ──────────────────────────────────────────────────
