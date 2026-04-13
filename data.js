@@ -9,7 +9,7 @@ const DATA = {
   // ──────────────────────────────────────────────────
   name: "Suwaj Aryal",
   firstName: "Suwaj",
-  title: "Civil & Hydropower Engineer",
+  title: "Water Resource and Hydropower Engineer",
   tagline: "I design how water moves, from rivers to turbines.",
   location: "Budhanilkantha-10, Kathmandu, Nepal",
   phone: "+977 9869667002",
@@ -25,7 +25,8 @@ const DATA = {
   // ──────────────────────────────────────────────────
   heroWords: [
     "Water Resources Engineer",
-    "Hydropower Enthusiast",
+    "Hydroinfromatics Enthusiast",
+    "Hydropower Engineert",
     "Hydraulic Modeller",
     "Physics-Governed ML Modeller",
     "Scientific Python Developer",
@@ -36,7 +37,7 @@ const DATA = {
   // ──────────────────────────────────────────────────
   //  ABOUT ME
   // ──────────────────────────────────────────────────
-  aboutIntro: "Civil Engineer and Hydroinformatics Researcher specializing in Water Resources. Integrating physical principles with AI to model complex sediment dynamics.",
+  aboutIntro: "Computational and Hydro-informatics Researcher specializing in Water Resources. Integrating physical principles with AI to model complex sediment dynamics.",
   
   aboutStory: `My academic interests lie at the intersection of classical hydraulics and modern computational methods. I am particularly driven by the challenge of modeling river systems in data-scarce environments, where traditional empirical formulas often struggle to capture complex sediment dynamics. My goal is to develop more robust predictive tools by informing data-driven models with established physical principles.
 
@@ -64,8 +65,8 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
       status: "Ongoing",
       highlights: [
         "Merit scholarship through national-level entrance",
-        "Focus areas: Hydraulic modelling, sediment dynamics, and river engineering",
-        "Researching PGNN frameworks for robust suspended sediment load prediction",
+        "Focus areas: Hydraulic modelling, sediment dynamics, physical adherance and river engineering",
+        "Researching physics informed machine learning model for better physical consistency and reliablity ",
       ],
     },
     {
@@ -103,6 +104,7 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
       story: "Joined after obtaining my engineering license to design water distribution systems for rural communities.",
       points: [
         "Designed irrigation and rural water supply distribution networks",
+        "Design of lift water supply system",
       ],
     },
     {
@@ -123,13 +125,13 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
   research: [
     {
       title: "Suspended Sediment Load Prediction in Flashy Catchments",
-      type: "Conference Paper",
-      description: "Preparing a submission for the CEISD-2026 detailing the importance of ML in sediment prediction in Himalayan catchments.",
+      type: "Conference Paper ",
+      description: "Preparing a submission for the CEISD-2026 detailing the importance of Machine Learning, Deep Learning and Tree Based Learning in sediment prediction in Himalayan catchments.",
     },
     {
       title: "Hydrological Impact of Land-Use Change in Kathmandu Watershed",
       type: "Research Collaboration",
-      description: "Analysed how urbanization affects water flow patterns using HEC-RAS for hydrological modelling in the Kathmandu valley catchment.",
+      description: "Analysed how urbanization affects water flow patterns using GIS, Remote Sensing Data and HEC-RAS for hydrological modelling in the Kathmandu valley catchment.",
     },
     {
       title: "Pre-Feasibility Study of Badigad Hydropower Project",
@@ -155,7 +157,9 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
     "Computational Hydraulics & River Modelling",
     "Machine Learning in Hydrology and Hydraulics",
     "Sediment Transport & Reservoir Sustainability",
-    "Hydroinformatic Automation Systems",
+    "Data Driven Machine Learning architecture Design",
+    "Hydroinformatic Automation Systems and APIs",
+    "Data Analysis and Engineering",
     "Hydropower System Design & Optimization",
     "Flood & Watershed Modelling",
   ],
@@ -164,11 +168,11 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
   //  TECHNICAL SKILLS
   // ──────────────────────────────────────────────────
   skills: [
-    { category: "Hydrological Tools", items: ["HEC-HMS", "HEC-RAS", "HEC-ResSim", "SWAT", "EPA SWMM"] },
-    { category: "Programming & Web",  items: ["Python", "JavaScript", "HTML", "CSS", "VBA", "C", "FORTRAN"] },
-    { category: "Engineering Tools",  items: ["GIS", "AutoCAD", "Civil 3D"] },
-    { category: "CFD & Modelling",    items: ["OpenFOAM", "RESCON 2"] },
-    { category: "Academic Tools",     items: ["Excel", "Zotero", "LaTeX", "Word", "PowerPoint"] },
+    { category: "Hydrological Tools",                 items: ["HEC-HMS", "HEC-RAS", "HEC-ResSim", "SWAT", "EPA SWMM"] },
+    { category: "Programming & Web",                  items: ["Python", "JavaScript", "HTML", "CSS", "VBA", "C", "FORTRAN"] },
+    { category: "General Purpose Engineering Tools",  items: ["QGIS","ArcGIS","Google Earth Engine", "AutoCAD", "Civil 3D"] },
+    { category: "CFD & Modelling",                    items: ["OpenFOAM", "RESCON 2"] },
+    { category: "Academic Tools",                     items: ["Excel", "Zotero", "LaTeX", "Word", "PowerPoint"] },
   ],
 
   // ──────────────────────────────────────────────────
@@ -226,7 +230,7 @@ Beyond my academic pursuits, I love to watch and play football. I find that enga
   // ──────────────────────────────────────────────────
   //  WHERE I'M HEADED
   // ──────────────────────────────────────────────────
-  futureGoals: "I want to solve real-world problems for communities living alongside water systems by combining strong engineering fundamentals with modern computational tools.",
+  futureGoals: "Solving water resource challenges, demands collaborative innovation. I aim to work alongside experts to bridge the gap between physical hydrology and advanced computation. ",
 
   // ──────────────────────────────────────────────────
   //  FOOTER
