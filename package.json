@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-3d-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/write-notices.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "lucide": "^1.61.0",
+    "maplibre-gl": "^6.16.0",
+    "motion": "^14.6.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

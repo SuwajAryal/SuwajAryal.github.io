@@ -3,64 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suwaj Aryal — Civil & Hydropower Engineer</title>
-  <meta name="description" content="Portfolio of Suwaj Aryal — Civil Engineer, Hydropower Researcher, and Water Enthusiast from Nepal." />
+  <title>Suwaj Aryal · Water Resources & Hydroinformatics Research</title>
+  <meta name="description" content="Suwaj Aryal’s research portfolio: physics-guided machine learning, suspended sediment prediction, water resources, and PhD research interests." />
   <meta name="keywords" content="Civil Engineer, Hydropower, Nepal, HEC-RAS, Sediment, Portfolio" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="/src/premium.css" />
+  <link rel="stylesheet" href="/src/journey.css" />
+  <link rel="stylesheet" href="/src/explorer-journey.css" />
+  <link rel="stylesheet" href="/src/academic.css" />
 </head>
 <body>
-
-<!-- ====== NEPAL PHOTO BACKGROUNDS ====== -->
-<div class="nepal-photo-bg">
-  <div class="photo-layer photo-himalaya"></div>
-  <div class="photo-layer photo-hills"></div>
-  <div class="photo-layer photo-terai"></div>
-  <div class="photo-overlay"></div>
-</div>
-
-<div class="particles" id="particles"></div>
+<aside class="landscape-panel" aria-label="The story of Nepal’s rivers">
+  <div class="landscape-heading"><span id="landscape-step">01 / 03</span><span>FROM SOURCE TO PLAINS</span></div>
+  <h2 class="river-story-title">The story of<br>Nepal’s rivers.</h2>
+  <div class="landscape-art">
+    <img class="landscape-image is-active" data-scene="himalayas" src="./journey-art/himalayas-still.png" width="336" height="447" alt="A red-coated explorer hiking in the Himalayas beside a meltwater stream">
+    <img class="landscape-image" data-scene="hills" src="./journey-art/hills-still.png" width="384" height="480" alt="An explorer walking a green ridge above a river" aria-hidden="true">
+    <img class="landscape-image" data-scene="terai" src="./journey-art/terai-still.png" width="384" height="480" alt="The explorer paddling along a tall winding Terai river, between low grassy banks and flat farmland" aria-hidden="true">
+  </div>
+  <div class="landscape-caption"><p id="landscape-region">HIMALAYAS</p><h3 id="landscape-title">Where it all begins.</h3><p id="landscape-description">Snow and ice feed the headwaters. A warming climate is changing their future.</p></div>
+  <div class="landscape-footer">
+    <nav class="landscape-stops" aria-label="Landscape chapters"><a href="#hero" data-region-link="himalayas" aria-current="step">Snow</a><a href="#interests" data-region-link="hills">Hills</a><a href="#skills" data-region-link="terai">Terai</a></nav>
+    <button type="button" data-art-pause aria-pressed="false">Pause animation</button>
+  </div>
+</aside>
 
 <!-- ====== NAV ====== -->
 <nav id="nav">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo" id="nav-logo"></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#beyond">Life</a></li>
-      <li><a href="#contact">Contact</a></li>
-      </li><a href="./Resume_suwaj.pdf" download="Resume_suwaj.pdf" class="btn btn-outline" style="border-color: #00ff88; color: #00ff88;">Download CV</a></li>
+      <li><a href="#interests">Research interests</a></li><li><a href="#research">Thesis</a></li><li><a href="#publications">Publications</a></li><li><a href="#education">Education</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+      <li><a href="./Resume_suwaj_academic.pdf" download="Resume_suwaj_academic.pdf" class="btn btn-outline">Download CV</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ====== HERO ====== -->
-<header class="hero" id="hero">
-  <div class="hero-layout">
-    <!-- Left: Text -->
-    <div class="hero-text">
-      <p class="hero-greeting">Namaste, I'm</p>
-      <h1 id="heroName"></h1>
-      <p class="hero-typed-wrap">
-        <span class="hero-typed" id="heroTyped"></span>
-      </p>
-      <p class="hero-tagline" id="heroTagline"></p>
-      <div class="hero-chips" id="heroChips"></div>
-      <div class="hero-cta">
-        <a href="#research" class="btn btn-primary">Explore My Work</a>
-        <a href="#contact" class="btn btn-outline">Let's Connect</a>
-      </div>
+<header class="hero academic-hero" id="hero" data-landscape-region="himalayas">
+  <div class="hero-layout"><div class="hero-text">
+    <p class="hero-greeting">NAMASTE, I’M</p>
+    <h1 id="heroName"></h1>
+    <p class="hero-typed-wrap"><span class="hero-typed" id="heroTyped"></span></p>
+    <p class="hero-research-focus" id="researchFocus"></p>
+    <p class="research-introduction" id="researchIntroduction"></p>
+    <p class="research-status" id="researchStatus"></p>
+    <p class="research-opportunity" id="researchOpportunity"></p>
+    <div class="hero-chips" id="heroChips"></div>
+    <div class="hero-cta">
+      <a href="#research" class="btn btn-primary">Research & thesis <i data-lucide="arrow-up-right"></i></a>
+      <a href="#publications" class="btn btn-outline">Publications</a>
+      <a id="researchEmail" class="academic-email-link" href="mailto:080MSHPE023.suwaj@pcampus.edu.np">Discuss research <i data-lucide="mail"></i></a>
     </div>
-  </div>
+    <div class="hero-disciplines"><span>WATER RESOURCES</span><span>HYDROINFORMATICS</span><span>SEDIMENT DYNAMICS</span></div>
+  </div></div>
 </header>
 
+<section class="section reveal" id="interests" data-landscape-region="hills">
+  <div class="section-header">
+    <span class="section-number">04</span>
+    <h2 class="section-title">Research Interests</h2>
+    <span class="section-line"></span>
+  </div>
+  <p class="section-introduction">My interests connect physical understanding of river systems with predictive models that can be evaluated critically, especially where data are limited.</p><div class="research-themes" id="researchThemes"></div><h3 class="academic-subheading">Methods, interests & applications</h3><div class="interests-flex" id="interestsFlex"></div>
+</section>
+
+<section class="section reveal" id="research" data-landscape-region="hills">
+  <div class="section-header">
+    <span class="section-number">05</span>
+    <h2 class="section-title">Research & Thesis</h2>
+    <span class="section-line"></span>
+  </div>
+  <p class="section-introduction">My current thesis examines suspended sediment prediction in the West Rapti River Basin, with equal attention to predictive performance, physical constraints, and the limitations of model reliability.</p><div class="research-evidence"><span><b>10</b> models benchmarked</span><span><b>2016 to 2023</b> hydro-meteorological records</span><span><b>2023</b> held-out test year</span></div><div class="research-grid" id="researchGrid"></div>
+</section>
+
+<section class="section reveal" id="publications" aria-labelledby="publicationsTitle" data-landscape-region="hills">
+  <div class="section-header"><h2 class="section-title" id="publicationsTitle">Publications & Presentations</h2><span class="section-line"></span></div>
+  <div class="research-grid" id="publicationsGrid"></div>
+  <h3 class="academic-subheading">Manuscripts & Preprints</h3>
+  <p class="academic-note">Current manuscript and preprint work listed in my academic CV.</p>
+  <ul class="manuscript-list" id="manuscriptList"></ul>
+</section>
+
+<!-- The map stays beside this story until the education chapter ends. -->
+<div class="story-journey" id="story-journey" data-landscape-region="hills">
+  <aside class="journey-map" aria-label="Map following my education journey">
+    <div id="journey-map-canvas"></div>
+    <div class="journey-map-heading"><span>NEPAL / MY JOURNEY</span><span id="journey-counter">01 / 04</span></div>
+    <div class="journey-map-caption">
+      <p class="journey-kicker" id="journey-place">NEPAL · MY HOME</p>
+      <h2 id="journey-title">Where mountains meet water.</h2>
+      <p id="journey-description">Himalayan headwaters and river systems. Scroll to follow my journey.</p>
+      <div class="nepal-legend" id="nepal-legend"><span><i class="legend-border"></i>Nepal</span><span><i class="legend-water"></i>River systems</span><span>Himalayan relief</span></div>
+      <div class="journey-stops" aria-hidden="true"><span class="active"></span><span></span><span></span><span></span></div>
+      <div class="journey-actions"><span id="journey-hint" role="status">Loading the map…</span><button id="journey-pause" type="button" aria-pressed="false">Pause journey</button></div>
+      <a class="journey-source" href="./sources.html">Map & code credits ↗</a>
+    </div>
+  </aside>
+  <div class="journey-copy">
+<!-- ====== HERO ====== -->
+
+
+<section class="section" id="place"><p class="section-eyebrow">PLACE & EDUCATION</p><h2 class="section-title">A perspective shaped by Nepal.</h2><p class="education-intro">Himalayan headwaters and river systems are the landscape behind my work in water resources and hydropower.</p><p id="heroTagline" class="place-tagline"></p><div class="climate-story"><h3>A changing climate flows downstream.</h3><p>Nepal is among the countries most vulnerable to climate change. Retreating glaciers, intense rainfall, and changing river flows connect risks across the Himalayas, hills, and Terai. Erosion and landslides upstream can carry consequences downstream, where floods threaten farms, infrastructure, and communities.</p><p>Understanding these connected river systems is one reason I want to work on reliable models for water and sediment.</p><a class="academic-link" href="https://www.ifc.org/en/insights-reports/2022/nepal-country-climate-and-development-report" target="_blank" rel="noopener noreferrer">Climate context: World Bank Group, Nepal CCDR (2022) ↗</a></div></section>
 <!-- ====== ABOUT ====== -->
 <section class="section reveal" id="about">
   <div class="section-header">
@@ -81,41 +128,32 @@
     <h2 class="section-title">Education</h2>
     <span class="section-line"></span>
   </div>
+  <p class="education-intro">From school in Kapan and higher secondary study in Bagbazar to civil engineering and postgraduate hydropower research at Pulchowk Campus.</p>
   <div class="timeline" id="eduTimeline"></div>
 </section>
+  </div>
+</div>
 
 <!-- ====== EXPERIENCE ====== -->
-<section class="section reveal" id="experience">
+<section class="section reveal" id="experience" data-landscape-region="hills">
   <div class="section-header">
     <span class="section-number">03</span>
     <h2 class="section-title">Work Experience</h2>
     <span class="section-line"></span>
   </div>
   <div class="timeline" id="expTimeline"></div>
+  <p class="academic-note">Experience is listed newest first. Education follows my journey from school to postgraduate study. Projects, manuscripts, and awards without confirmed dates remain undated.</p>
 </section>
 
 <!-- ====== RESEARCH INTERESTS ====== -->
-<section class="section reveal" id="interests">
-  <div class="section-header">
-    <span class="section-number">04</span>
-    <h2 class="section-title">Research Interests</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="interests-flex" id="interestsFlex"></div>
-</section>
+
 
 <!-- ====== RESEARCH PROJECTS ====== -->
-<section class="section reveal" id="research">
-  <div class="section-header">
-    <span class="section-number">05</span>
-    <h2 class="section-title">Projects & Research Work</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="research-grid" id="researchGrid"></div>
-</section>
+
+
 
 <!-- ====== SKILLS ====== -->
-<section class="section reveal" id="skills">
+<section class="section reveal" id="skills" data-landscape-region="terai">
   <div class="section-header">
     <span class="section-number">06</span>
     <h2 class="section-title">Technical Skills</h2>
@@ -125,7 +163,7 @@
 </section>
 
 <!-- ====== TRAINING ====== -->
-<section class="section reveal" id="training">
+<section class="section reveal" id="training" data-landscape-region="terai">
   <div class="section-header">
     <span class="section-number">07</span>
     <h2 class="section-title">Training</h2>
@@ -135,7 +173,18 @@
 </section>
 
 <!-- ====== BEYOND ENGINEERING ====== -->
-<section class="section reveal" id="beyond">
+<section class="section reveal" id="honors" aria-labelledby="honorsTitle" data-landscape-region="terai">
+  <div class="section-header"><h2 class="section-title" id="honorsTitle">Honours & Scholarships</h2><span class="section-line"></span></div>
+  <div class="research-grid" id="honorsGrid"></div>
+</section>
+<section class="section reveal" id="professional" aria-labelledby="professionalTitle" data-landscape-region="terai">
+  <div class="section-header"><h2 class="section-title" id="professionalTitle">Professional Affiliations & Languages</h2><span class="section-line"></span></div>
+  <div class="research-grid" id="affiliationsGrid"></div>
+  <h3 class="academic-subheading">Languages</h3>
+  <div class="research-grid" id="languagesGrid"></div>
+  <p class="academic-note" id="referencesNote"></p>
+</section>
+<section class="section reveal" id="beyond" data-landscape-region="terai">
   <div class="section-header">
     <span class="section-number">08</span>
     <h2 class="section-title">Beyond Engineering</h2>
@@ -145,7 +194,7 @@
 </section>
 
 <!-- ====== FUTURE ====== -->
-<section class="section reveal" id="future">
+<section class="section reveal" id="future" data-landscape-region="terai">
   <div class="section-header">
     <span class="section-number">09</span>
     <h2 class="section-title">Where I'm Headed</h2>
@@ -155,7 +204,7 @@
 </section>
 
 <!-- ====== CONTACT ====== -->
-<section class="section reveal" id="contact">
+<section class="section reveal" id="contact" data-landscape-region="terai">
   <div class="section-header">
     <span class="section-number">10</span>
     <h2 class="section-title">Get In Touch</h2>
@@ -165,233 +214,12 @@
 </section>
 
 <!-- ====== FOOTER ====== -->
-<footer id="footer"></footer>
+<footer id="footer" data-landscape-region="terai"></footer>
 
 <!-- ====== DATA + ENGINE ====== -->
-<script src="data.js?v=3"></script>
-<script>
-(function () {
-  const d = DATA;
+<script type="module" src="/src/scene-loader.js"></script>
+<script type="module" src="/src/portfolio.js"></script>
+<script type="module" src="/src/explorer-journey.js"></script>
 
-  // ── Helpers ──
-  const $ = id => document.getElementById(id);
-  const iconMap = {
-    football:    "\u26BD",
-    cricket:     "\uD83C\uDFCF",
-    tabletennis: "\uD83C\uDFD3",
-    gaming:      "\uD83C\uDFAE",
-    guitar:      "\uD83C\uDFB8",
-    manga:       "\uD83D\uDCDA",
-    hiking:      "\u26F0\uFE0F",
-  };
-
-  // ── Nav ──
-  $('nav-logo').textContent = d.firstName || d.name.split(' ')[0];
-
-  // ── Hero ──
-  $('heroName').textContent = d.name;
-  $('heroTagline').textContent = d.tagline;
-
-  // Hero chips
-  $('heroChips').innerHTML = `
-    <span class="chip"><span class="chip-icon">\uD83D\uDCCD</span>${d.location}</span>
-    <a class="chip" href="mailto:${d.email}"><span class="chip-icon">\u2709</span>${d.email}</a>
-    <a class="chip" href="tel:${d.phone.replace(/\s/g,'')}"><span class="chip-icon">\uD83D\uDCDE</span>${d.phone}</a>
-  `;
-
-  // Typing effect
-  const typed = $('heroTyped');
-  let wordIdx = 0, charIdx = 0, deleting = false;
-  function typeLoop() {
-    const word = d.heroWords[wordIdx];
-    if (!deleting) {
-      typed.textContent = word.slice(0, ++charIdx);
-      if (charIdx === word.length) { deleting = true; setTimeout(typeLoop, 2000); return; }
-      setTimeout(typeLoop, 90);
-    } else {
-      typed.textContent = word.slice(0, --charIdx);
-      if (charIdx === 0) { deleting = false; wordIdx = (wordIdx + 1) % d.heroWords.length; setTimeout(typeLoop, 400); return; }
-      setTimeout(typeLoop, 45);
-    }
-  }
-  typeLoop();
-
-  // ── About ──
-  const aboutParts = d.aboutStory.split('\n\n');
-  $('aboutText').innerHTML =
-    `<span class="lead">${d.aboutIntro}</span>` +
-    aboutParts.map(p => `<p style="margin-bottom:.75rem">${p.trim()}</p>`).join('');
-
-  $('aboutSidebar').innerHTML = d.aboutHighlights.map(h => `
-    <div class="about-stat">
-      <div class="about-stat-value">${h.icon}</div>
-      <div class="about-stat-label">${h.label}</div>
-    </div>
-  `).join('');
-
-  // ── Education ──
-  $('eduTimeline').innerHTML = d.education.map(e => `
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="card">
-        <div class="card-top">
-          <span class="card-title">${e.degree}</span>
-          <span class="card-badge ${e.status.toLowerCase().includes('ongoing') ? 'badge-ongoing' : 'badge-completed'}">${e.status}</span>
-        </div>
-        <p class="card-institution">${e.institution}</p>
-        <p class="card-period">${e.period}</p>
-        <ul>${e.highlights.map(h => `<li>${h}</li>`).join('')}</ul>
-      </div>
-    </div>
-  `).join('');
-
-  // ── Experience ──
-  $('expTimeline').innerHTML = d.experience.map(e => `
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="card">
-        <div class="card-top">
-          <span class="card-title">${e.role} — ${e.company}</span>
-          <span class="card-badge badge-tag">${e.period}</span>
-        </div>
-        <p class="card-story">${e.story}</p>
-        <ul>${e.points.map(p => `<li>${p}</li>`).join('')}</ul>
-      </div>
-    </div>
-  `).join('');
-
-  // ── Research Interests ──
-  $('interestsFlex').innerHTML = d.researchInterests.map(ri => `
-    <span class="interest-pill">${ri}</span>
-  `).join('');
-
-  // ── Research Projects ──
-  $('researchGrid').innerHTML = d.research.map(r => `
-    <div class="card research-card">
-      <p class="research-type">${r.type}</p>
-      <h3 class="research-title">${r.title}</h3>
-      <p class="research-desc">${r.description}</p>
-    </div>
-  `).join('');
-
-  // ── Skills ──
-  $('skillsFlex').innerHTML = d.skills.map(s => `
-    <div class="card skill-card">
-      <p class="skill-cat">${s.category}</p>
-      <div class="skill-pills">${s.items.map(i => `<span class="pill">${i}</span>`).join('')}</div>
-    </div>
-  `).join('');
-
-  // ── Training ──
-  $('trainingCards').innerHTML = d.training.map(t => `
-    <div class="card">
-      <div class="card-top">
-        <span class="card-title">${t.name}</span>
-        <span class="card-badge badge-tag">${t.duration}</span>
-      </div>
-      <div class="skill-pills" style="margin-top:.6rem">${t.items.map(i => `<span class="pill">${i}</span>`).join('')}</div>
-    </div>
-  `).join('');
-
-  // ── Beyond Engineering ──
-  $('beyondGrid').innerHTML = d.beyondEngineering.map(b => `
-    <div class="card beyond-card">
-      <div class="beyond-icon">${iconMap[b.icon] || '\u2728'}</div>
-      <div>
-        <p class="beyond-title">${b.title}</p>
-        <p class="beyond-desc">${b.description}</p>
-      </div>
-    </div>
-  `).join('');
-
-  // ── Future ──
-  $('futureBox').innerHTML = `
-    <p>${d.futureGoals}</p>
-    <a href="mailto:${d.email}" class="btn btn-primary" style="margin-top:1.5rem">Let's Talk</a>
-  `;
-
-  // ── Contact ──
-  $('contactGrid').innerHTML = `
-    <div class="card contact-card">
-      <span class="chip-icon">\u2709\uFE0F</span>
-      <p class="contact-label">Personal Email</p>
-      <a class="contact-value" href="mailto:${d.email}">${d.email}</a>
-    </div>
-    <div class="card contact-card">
-      <span class="chip-icon">\uD83C\uDFEB</span>
-      <p class="contact-label">Academic Email</p>
-      <a class="contact-value" href="mailto:${d.academicEmail}">${d.academicEmail}</a>
-    </div>
-    <div class="card contact-card">
-      <span class="chip-icon">\uD83D\uDCDE</span>
-      <p class="contact-label">Phone</p>
-      <a class="contact-value" href="tel:${d.phone.replace(/\s/g,'')}">${d.phone}</a>
-    </div>
-    <div class="card contact-card">
-      <span class="chip-icon">\uD83D\uDCCD</span>
-      <p class="contact-label">Location</p>
-      <p class="contact-value">${d.location}</p>
-    </div>
-    ${d.social.linkedin ? `<div class="card contact-card"><span class="chip-icon">\uD83D\uDD17</span><p class="contact-label">LinkedIn</p><a class="contact-value" href="${d.social.linkedin}" target="_blank">View Profile</a></div>` : ''}
-    ${d.social.github ? `<div class="card contact-card"><span class="chip-icon">\uD83D\uDCBB</span><p class="contact-label">GitHub</p><a class="contact-value" href="${d.social.github}" target="_blank">View Profile</a></div>` : ''}
-  `;
-
-  // ── Footer ──
-  $('footer').innerHTML = `
-    <p class="footer-quote">"${d.footerQuote}"</p>
-    <p class="footer-copy">&copy; ${new Date().getFullYear()} ${d.name}. Built with curiosity and code.</p>
-  `;
-
-  // ── Mobile Nav ──
-  $('navToggle').addEventListener('click', () => $('navLinks').classList.toggle('open'));
-  document.querySelectorAll('.nav-links a').forEach(a =>
-    a.addEventListener('click', () => $('navLinks').classList.remove('open'))
-  );
-
-  // ── Scroll: nav shadow + reveal ──
-  const nav = $('nav');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // ── Scroll: nav shadow + Nepal photo transitions ──
-  const bg = document.querySelector('.nepal-photo-bg');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-
-    // Smooth photo background transitions based on scroll position
-    const scrollPct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-
-    // Himalaya: full at top, fades out by 35%
-    const himalaya = Math.max(0, 1 - scrollPct * 3.5);
-    // Hills: fades in from 15%, peaks at 50%, fades out by 75%
-    const hills = Math.max(0, scrollPct < 0.15 ? 0 : scrollPct < 0.5 ? (scrollPct - 0.15) * 2.85 : 1 - (scrollPct - 0.5) * 3);
-    // Terai: fades in from 55%, full by 80%
-    const terai = Math.max(0, Math.min(1, (scrollPct - 0.55) * 4));
-
-    bg.style.setProperty('--himalaya-opacity', himalaya);
-    bg.style.setProperty('--hills-opacity', hills);
-    bg.style.setProperty('--terai-opacity', terai);
-  }, { passive: true });
-
-  // ── Floating green particles ──
-  const particleBox = $('particles');
-  for (let i = 0; i < 18; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    const size = Math.random() * 4 + 2;
-    p.style.cssText = `
-      width:${size}px; height:${size}px;
-      left:${Math.random()*100}%;
-      animation-duration:${Math.random()*12+10}s;
-      animation-delay:${Math.random()*10}s;
-      opacity:${Math.random()*.3+.1};
-    `;
-    particleBox.appendChild(p);
-  }
-
-})();
-</script>
 </body>
 </html>

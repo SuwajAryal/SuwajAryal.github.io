@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Community credits · Suwaj Aryal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing:border-box; } body { margin:0; background:#fbfaf6; color:#303b3b; font:16px/1.85 Inter,Arial,sans-serif; }
+    main { max-width:850px; margin:auto; padding:70px 24px; } a { color:#285c57; text-underline-offset:4px; }
+    h1 { color:#202e2e; font:500 clamp(2rem,6vw,3.2rem)/1.15 'Source Serif 4',Georgia,serif; letter-spacing:-.03em; }
+    h2 { font:500 1.5rem/1.4 'Source Serif 4',Georgia,serif; color:#202e2e; margin:2.5rem 0 .7rem; }
+    .eyebrow { color:#285c57; font-size:.75rem; letter-spacing:.1em; margin-top:50px; } p { max-width:70ch; }
+    li { margin:.8rem 0; } ul { padding-left:1.2rem; } footer { border-top:1px solid #dedfd7; padding-top:24px; margin-top:50px; font-size:.9rem; }
+  </style>
+</head>
+<body><main>
+  <a href="./">← Back to the portfolio</a>
+  <p class="eyebrow">BUILT WITH THE OPEN-SOURCE COMMUNITY</p>
+  <h1>The people and projects<br>behind this experience.</h1>
+  <p>The scroll-driven education journey combines community mapping software and real geographic data. The separate pixel-art explorer scenes are original generated artwork selected and requested by the portfolio owner.</p>
+  <h2>Selected explorer scenes</h2>
+  <p>The Himalayas, hills, and Terai illustrations were created as original pixel-art drafts and selected by the owner, then adjusted to give the character slightly fairer skin. Their outer backgrounds were removed so the scenes blend with the lighter page. They use short four-frame loops, with still frames for paused and reduced-motion viewing. These are imaginative landscapes, not real footage, a surveyed river network, or a physical flow model. The avatar is a stylized stand-in rather than a portrait.</p>
+  <h2>A map that follows the story</h2>
+  <p><a href="https://maplibre.org/">MapLibre GL JS</a> renders the landscape, street maps, and camera transitions. Its <a href="https://maplibre.org/maplibre-gl-js/docs/examples/fly-to-a-location-based-on-scroll-position/">official scroll-to-location example</a> and terrain/hillshade examples guided this integration. MapLibre is BSD-3-Clause licensed.</p>
+  <h2>Map style and geographic data</h2>
+  <p><a href="https://openfreemap.org/">OpenFreeMap</a> provides the existing Liberty map style and hosted tiles, using <a href="https://openmaptiles.org/">OpenMapTiles</a> and data from <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>. Their attribution is preserved on the map.</p>
+  <p>Made with <a href="https://www.naturalearthdata.com/">Natural Earth</a> for Nepal’s boundary, regional river lines, and mountain labels, extracted from its public-domain 1:10 million datasets. Source coordinates are preserved.</p>
+  <p><a href="https://mapterhorn.com/">Mapterhorn</a> provides open elevation tiles for Himalayan relief and hillshading. See its <a href="https://mapterhorn.com/attribution/">source attribution and data terms</a>. The relief uses modest 1.35× vertical exaggeration for clarity.</p>
+  <p>The river lines show mapped geography. They are not live discharge or simulated flow, and this generalised dataset omits smaller tributaries. More detailed waterways appear from OpenStreetMap as the map zooms in.</p>
+  <p>The campus marker is an approximate location within the Pulchowk Campus area. Both degrees share that campus; no degree-specific building or surveyed position is implied.</p>
+  <h2 id="landscape">Earlier pixel-art draft</h2>
+  <p>This draft has been removed from the portfolio page while replacement animation previews are reviewed. Its retained source assets and credits are listed below.</p>
+  <p>The left-side illustration combines <a href="https://opengameart.org/content/winter-pixel-art-background-with-mountain">Winter Pixel Art Background With Mountain</a> by CraftPix.net (<a href="./pixel-river/OGA-BY-3.0.txt">OGA-BY 3.0</a>), <a href="https://opengameart.org/content/16x16-puny-world-tileset">Puny World</a> by Shade (CC0), <a href="https://opengameart.org/content/tiny-rpg-mountain-tileset">Tiny RPG Mountain</a> by Luis Zuno / Ansimuz (CC0), and <a href="https://opengameart.org/content/animated-flowing-water-2d-16x16">Animated flowing water</a> by InThePixel (CC0).</p>
+  <p>Existing sprites are cropped, scaled, and arranged using 2D Canvas. The existing water animation is rotated to flow downward through connected channels. No AI-generated artwork is used. This is a Nepal-inspired landscape, not a surveyed river system or hydrological simulation. <a href="./pixel-river/CREDITS.md">Read full asset credits and modifications</a>.</p>
+  <h2>Climate context</h2>
+  <p>The river story connects Himalayan headwaters, hills, and the Terai with climate vulnerability. Sources: World Bank Group, <a href="https://www.ifc.org/en/insights-reports/2022/nepal-country-climate-and-development-report">Nepal Country Climate and Development Report (2022)</a> and <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099700403182421281">Climate Change Technical Note (2024)</a>. Nepal is described as among the most vulnerable countries, without assigning a fixed global rank.</p>
+  <p>The Kapan and Bagbazar school views show approximate neighbourhoods, without school-building pins.</p>
+  <h2>Motion, icons, and type</h2>
+  <ul>
+    <li><a href="https://motion.dev/">Motion</a> · restrained section transitions. MIT.</li>
+    <li><a href="https://lucide.dev/">Lucide</a> · interface icons. ISC, including its Feather-derived notices.</li>
+    <li><a href="https://rsms.me/inter/">Inter</a> by Rasmus Andersson · typography, served through Google Fonts. SIL Open Font License.</li>
+    <li><a href="https://github.com/adobe-fonts/source-serif">Source Serif 4</a> by Adobe · headings, served through Google Fonts. SIL Open Font License.</li>
+  </ul>
+  <footer><a href="./community-licenses.txt">Read full software license notices</a> · <a href="https://github.com/SuwajAryal/portfolio_modify/blob/main/SOURCES.md">Source files and dataset revision</a></footer>
+</main></body></html>
